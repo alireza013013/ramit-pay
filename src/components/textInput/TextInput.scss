@@ -1,0 +1,40 @@
+@import "../../styles/references/index";
+
+.main-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 10px;
+
+    .title-input {
+        color: #071225;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 6px;
+    }
+    .inputs {
+        width: 288px;
+        height: 48px;
+        background-color: white;
+        border-radius: 12px;
+        border: none;
+        padding: 0 16px;
+        color: black;
+        font-family: "YekanBakh";
+    }
+    .inputs:focus {
+        outline: none;
+        border: none;
+    }
+    .inputs::placeholder {
+        color: #929db1;
+        font-family: "YekanBakh";
+    }
+    .inputs::-webkit-outer-spin-button,
+    .inputs::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}

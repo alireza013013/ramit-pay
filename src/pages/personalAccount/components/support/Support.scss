@@ -1,0 +1,153 @@
+@import "../../../../styles/references/index";
+
+.main-support {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #d7efff;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    row-gap: 10px;
+
+    .box-information {
+        width: 90%;
+        max-width: 320px;
+        background-color: white;
+        border-radius: 12px;
+        padding: 14px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 20px;
+
+        .title {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 14px;
+            color: #182b49;
+        }
+        .info-div {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .subtitle {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 12px;
+                color: #929db1;
+            }
+
+            .phonenumber {
+                background-color: #f0f9ff;
+                padding: 10px 6px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 14px;
+                color: #0957de;
+            }
+
+            .email {
+                background-color: #f0f9ff;
+                padding: 10px 6px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 14px;
+                color: #1b2b46;
+            }
+        }
+        .address {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 10px;
+            .subtitle {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 12px;
+                color: #929db1;
+            }
+            .address-text {
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 20px;
+                color: #182b49;
+            }
+        }
+
+        .line-seperator {
+            width: 100%;
+            height: 1px;
+            background-color: #d2dbec;
+        }
+
+        .social-media {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 16px;
+            .title {
+                width: 100%;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 14px;
+                color: #182b49;
+            }
+            .link {
+                text-decoration: none;
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+
+    .title-form {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 14px;
+        color: #182b49;
+        margin-top: 20px;
+    }
+
+    .subtitle-form {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 12px;
+        color: #182b49;
+        margin-bottom: 20px;
+    }
+
+    button {
+        background-color: #1b2b46;
+        width: 90%;
+        max-width: 320px;
+        height: 48px;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all;
+        margin-top: 10px;
+        font-family: "YekanBakh";
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}

@@ -1,0 +1,72 @@
+@import "../../../../styles/references/index";
+
+.main-roles {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #d7efff;
+
+    .title-button {
+        display: flex;
+        width: 90%;
+        max-width: 320px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 20px;
+        .title {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 14px;
+            color: black;
+        }
+        img {
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            right: 10px;
+            cursor: pointer;
+        }
+    }
+
+    .roles-div {
+        width: 90%;
+        max-width: 280px;
+        border-radius: 16px;
+        background-color: #f0f9ff;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 10px;
+        margin-top: 40px;
+
+        .subtitle {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 14px;
+            color: #181f2e;
+        }
+
+        .description {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #181f2e;
+            display: flex;
+            align-items: flex-start;
+            .dot {
+                min-width: 6px;
+                min-height: 6px;
+                border-radius: 50%;
+                background-color: #181f2e;
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

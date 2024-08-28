@@ -1,0 +1,37 @@
+@import "../../styles/references/index";
+
+.main-text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 10px;
+
+    .title-input {
+        color: #071225;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 6px;
+    }
+    .inputs {
+        width: 288px;
+        background-color: white;
+        border-radius: 12px;
+        border: none;
+        padding: 16px;
+        color: black;
+        resize: none;
+        max-height: 128px;
+        min-height: 128px;
+        font-family: "YekanBakh";
+    }
+    .inputs:focus {
+        outline: none;
+        border: none;
+    }
+    .inputs::placeholder {
+        color: #929db1;
+        font-family: "YekanBakh";
+    }
+}
