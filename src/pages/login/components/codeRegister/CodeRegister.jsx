@@ -8,8 +8,15 @@ export const CodeRegister = (props) => {
 
     const [otp, setOtp] = useState('');
 
+    const toFarsiNumber = n => {
+        const farsiDigits = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
+
+        return n?.toString()?.replace(/\d/g, x => farsiDigits[x]);
+    };
+
     const changeOtp = (value) => {
-        setOtp(value)
+        let persian = toFarsiNumber(value)
+        setOtp(persian)
     }
 
     return (
@@ -29,6 +36,7 @@ export const CodeRegister = (props) => {
                     }}
                     inputStyle={"otp-input"}
                     renderInput={(props) => <input {...props} />}
+                    shouldAutoFocus
                 />
             </div>
             <button onClick={props.goNextPage}>

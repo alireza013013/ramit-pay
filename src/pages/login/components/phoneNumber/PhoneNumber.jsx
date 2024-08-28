@@ -7,7 +7,7 @@ import { Roles } from '../roles/Roles'
 
 export const PhoneNumber = (props) => {
 
-    const [phoneNumber, setPhoneNumber] = useState()
+    const [phoneNumber, setPhoneNumber] = useState("")
     const [openRole, setOpenRole] = useState(false)
 
     return (

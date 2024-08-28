@@ -46,15 +46,11 @@
             height: 20px;
             border-radius: 4px;
             border: 2px solid #1b2b46;
+            // -webkit-appearance: none;
+            margin-top: -2px;
+            cursor: pointer;
         }
 
-        // .input-checkbox {
-        //     width: 20px;
-        //     height: 20px;
-        //     border-radius: 4px;
-        //     border: 2px solid #1b2b46;
-        //     background-color: red;
-        // }
         .roles {
             font-size: 12px;
             line-height: 12px;
