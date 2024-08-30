@@ -14,12 +14,8 @@ export const TextInput = (props) => {
     };
 
     const handleChange = (event) => {
-        if (props.type == "tel") {
-            let persian = toFarsiNumber(event.target.value)
-            props.setValue(persian);
-        } else {
-            props.setValue(event.target.value);
-        }
+        let persian = toFarsiNumber(event.target.value)
+        props.setValue(persian);
     }
 
 

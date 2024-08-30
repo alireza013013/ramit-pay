@@ -14,6 +14,11 @@ export const CodeRegister = (props) => {
         return n?.toString()?.replace(/\d/g, x => farsiDigits[x]);
     };
 
+    const toLatinNumber = n => {
+        const latinDigits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+        return n?.toString()?.replace(/\d/g, x => latinDigits[x]);
+    };
+
     const changeOtp = (value) => {
         let persian = toFarsiNumber(value)
         setOtp(persian)

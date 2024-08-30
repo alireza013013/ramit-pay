@@ -19,7 +19,7 @@ export const Profile = (props) => {
 
             <TextInput title="نام‌خانوادگی" value={lastName} placeholder="سرلک" setValue={(value) => setLastName(value)} type="text" />
 
-            <TextInput title="کد ملی" value={nationalCode} placeholder="۴۱۶۰۲۲۳۳۴۴۵" setValue={(value) => setNationalCode(value)} type="number" />
+            <TextInput title="کد ملی" value={nationalCode} placeholder="۴۱۶۰۲۲۳۳۴۴۵" setValue={(value) => setNationalCode(value)} type="text" />
 
             <TextInput title="آدرس ایمیل" value={email} placeholder="alies@gmail.com" setValue={(value) => setEmail(value)} type="email" />
 
