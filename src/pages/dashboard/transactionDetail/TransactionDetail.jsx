@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './TransactionDetail.scss'
 import arrow from "../../../assets/icons/arrow.png"
 import close from "../../../assets/icons/close-circle.svg"
@@ -6,6 +6,7 @@ import check from "../../../assets/icons/check-circle.svg"
 import plus from "../../../assets/icons/plus-circle.svg"
 import successUser from '../../../assets/icons/success-user.svg'
 import failUser from '../../../assets/icons/failed-user.svg'
+import { useParams, useNavigate } from 'react-router-dom';
 
 export const TransactionDetail = () => {
 
@@ -49,14 +50,18 @@ export const TransactionDetail = () => {
         }
     ]
 
-    const transaction = transactions[2]
+    let { id } = useParams();
+    let transaction = transactions[id - 1];
+
+    let navigate = useNavigate();
+
 
     return (
         <div className='main-transaction-detail'>
             <div className='container'>
                 <div className='title-button'>
                     <span className='title'>تراکنش‌ها</span>
-                    <img src={arrow} alt="Arrow" />
+                    <img onClick={() => navigate(-1)} src={arrow} alt="Arrow" />
                 </div>
                 <div className='image-text-status'>
                     <img src={transaction.isSuccessful ? successUser : failUser} alt="Status" />
@@ -144,7 +149,6 @@ export const TransactionDetail = () => {
                 <button>
                     اشتراک‌گذاری
                 </button>
-
             </div>
         </div>
     )

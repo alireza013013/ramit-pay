@@ -15,7 +15,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 10px;
 
         .title-button {
             display: flex;
@@ -208,6 +207,7 @@
             transition: all;
             margin-top: 10px;
             font-family: "YekanBakh";
+            margin-bottom: 10px;
 
             &:active {
                 transform: scale(0.95);
