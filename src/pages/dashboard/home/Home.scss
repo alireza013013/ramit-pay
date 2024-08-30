@@ -1,0 +1,234 @@
+@import "../../../styles/references/index";
+
+.main-home-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f9ff;
+
+    .container {
+        max-width: 340px;
+        width: 100%;
+        height: calc(100% - 80px);
+        min-height: calc(100vh - 80px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .header {
+            width: calc(96% - 20px);
+            height: 160px;
+            border-radius: 0 0 24px 24px;
+            background-color: #d7efff;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0 10px;
+
+            .avatar-name {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                column-gap: 6px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+                .welcome-name {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 4px;
+                    .welcome {
+                        font-size: 11px;
+                        line-height: 11px;
+                        color: #071225;
+                        font-weight: 400;
+                    }
+                    .name {
+                        font-size: 12px;
+                        line-height: 12px;
+                        color: #071225;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .notification {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 50%;
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            .balance-div {
+                width: 100%;
+                height: 72px;
+                border-radius: 16px;
+                background-color: #0957de;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 10px;
+
+                .title-amount {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 10px;
+                    .title {
+                        font-size: 11px;
+                        line-height: 11px;
+                        color: #58a5ff;
+                        font-weight: 400;
+                    }
+                    .amount {
+                        font-size: 20px;
+                        line-height: 20px;
+                        color: #ffffff;
+                        font-weight: 700;
+                    }
+                }
+
+                .plus-wallet {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 8px;
+                    img {
+                        width: 32px;
+                        height: 32px;
+                        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(326deg) brightness(108%) contrast(110%);
+                    }
+                    .plus {
+                        width: 40px;
+                        height: 40px;
+                        background-color: #ffffff;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img {
+                            width: 70%;
+                            filter: invert(22%) sepia(87%) saturate(2178%) hue-rotate(210deg) brightness(99%)
+                                contrast(105%);
+                        }
+                    }
+                }
+            }
+        }
+
+        .bank-cards {
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            margin-top: 20px;
+            column-gap: 10px;
+            overflow-x: auto;
+
+            .add-card-div {
+                min-width: 64px;
+                height: 216px;
+                border-radius: 12px;
+                border: 1px dashed #c9ced8;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span {
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: #929db1;
+                    font-weight: 600;
+                    transform: rotateZ(-90deg);
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    white-space: nowrap;
+                    column-gap: 6px;
+
+                    img {
+                        width: 14px;
+                        height: 14px;
+                        filter: invert(65%) sepia(7%) saturate(748%) hue-rotate(180deg) brightness(95%) contrast(89%);
+                    }
+                }
+            }
+
+            .bank-card {
+                background: url("../../../assets/background.png");
+                min-width: 280px;
+                height: 184px;
+                border-radius: 12px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                position: relative;
+                align-items: flex-end;
+                padding: 20px;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                .number {
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: #ffffff;
+                    font-weight: 400;
+                }
+                .name-date {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 4px;
+                    .name {
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: #ffffff;
+                        font-weight: 400;
+                    }
+                    .date {
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: #ffffff;
+                        font-weight: 400;
+                    }
+                }
+                img {
+                    width: 50px;
+                    height: 60px;
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                }
+            }
+        }
+
+        .cards {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 90px;
+            row-gap: 20px;
+            .title-link {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .title {
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: #929db1;
+                    font-weight: 700;
+                }
+                .link {
+                    font-size: 11px;
+                    line-height: 11px;
+                    color: #58a5ff;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
