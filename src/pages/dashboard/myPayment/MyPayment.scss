@@ -1,0 +1,221 @@
+@import "../../../styles/references/index";
+
+.main-mypayment {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f9ff;
+
+    .container {
+        max-width: 340px;
+        width: 100%;
+        height: calc(100% - 80px);
+        min-height: calc(100vh - 80px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .share-qr-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #d7efff;
+            border-radius: 16px;
+            width: calc(96% - 12px);
+            padding: 20px 12px;
+            margin-top: 10px;
+
+            .logo-div {
+                width: calc(100% - 10px);
+                height: 64px;
+                background-color: #0957de;
+                border-radius: 12px;
+                display: flex;
+                padding: 10px;
+                justify-content: flex-start;
+                align-items: center;
+                column-gap: 6px;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+                .title-name {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    row-gap: 4px;
+                    .title {
+                        font-size: 16px;
+                        line-height: 16px;
+                        font-weight: 700;
+                        color: white;
+                    }
+                    .name {
+                        font-size: 12px;
+                        line-height: 12px;
+                        font-weight: 400;
+                        color: white;
+                    }
+                }
+            }
+
+            .qrcode-buttons {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin-top: 20px;
+                .title-buttons {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    .title {
+                        font-size: 15px;
+                        line-height: 15px;
+                        font-weight: 700;
+                        color: #071225;
+                    }
+                    .desc {
+                        font-size: 11px;
+                        line-height: 11px;
+                        font-weight: 400;
+                        color: #57647c;
+                    }
+
+                    .buttons {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        column-gap: 2px;
+                        .download {
+                            width: 50px;
+                            height: 44px;
+                            border-radius: 12px 0 0 12px;
+                            background-color: #929db1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                width: 50%;
+                                height: 50%;
+                                filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(129deg) brightness(102%)
+                                    contrast(101%);
+                            }
+                        }
+                        .copy {
+                            width: 50px;
+                            height: 44px;
+                            border-radius: 0 12px 12px 0;
+                            background-color: #929db1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                width: 50%;
+                                height: 50%;
+                                filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(129deg) brightness(102%)
+                                    contrast(101%);
+                            }
+                        }
+                    }
+                }
+
+                .qrcode {
+                    width: 104px;
+                    height: 104px;
+                    background-color: #ffffff;
+                    border-radius: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: 80%;
+                        height: 80%;
+                    }
+                }
+            }
+
+            .line-seperator {
+                width: 100%;
+                height: 1px;
+                background-color: white;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .input-title {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                .title {
+                    font-size: 15px;
+                    line-height: 15px;
+                    font-weight: 700;
+                    color: #071225;
+                }
+                .desc {
+                    font-size: 11px;
+                    line-height: 11px;
+                    font-weight: 400;
+                    color: #57647c;
+                    margin-top: 6px;
+                }
+                .main-inputs {
+                    width: calc(100% - 4px);
+                    height: 48px;
+                    border-radius: 12px;
+                    background-color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    column-gap: 6px;
+                    padding: 0 2px;
+                    margin-top: 20px;
+                    .buttons {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        column-gap: 2px;
+                        .download {
+                            width: 50px;
+                            height: 44px;
+                            border-radius: 12px 0 0 12px;
+                            background-color: #929db1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                width: 50%;
+                                height: 50%;
+                                filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(129deg) brightness(102%)
+                                    contrast(101%);
+                            }
+                        }
+                        .share {
+                            width: 50px;
+                            height: 44px;
+                            border-radius: 0 12px 12px 0;
+                            background-color: #929db1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                width: 50%;
+                                height: 50%;
+                                filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(129deg) brightness(102%)
+                                    contrast(101%);
+                            }
+                        }
+                    }
+                    .text {
+                        font-size: 14px;
+                        line-height: 14px;
+                        font-weight: 400;
+                        color: #57647c;
+                    }
+                }
+            }
+        }
+    }
+}
