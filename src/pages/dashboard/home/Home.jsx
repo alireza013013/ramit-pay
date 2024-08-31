@@ -3,9 +3,9 @@ import user from "../../../assets/icons/failed-user.svg"
 import plus from "../../../assets/icons/plus.svg"
 import alarm from "../../../assets/icons/alarm.svg"
 import wallet from "../../../assets/icons/wallet.svg"
-import whiteLogo from "../../../assets/Remit.png"
 import { CardTransaction } from '../../../components/cardTransaction/CardTransaction'
 import { Link } from 'react-router-dom'
+import { CardBank } from '../../../components/cardBank/CardBank'
 
 
 export const Home = () => {
@@ -49,6 +49,21 @@ export const Home = () => {
         }
     ]
 
+    const bankCards = [
+        {
+            number: "۶۲۱۹  ۸۶۱۹  ۱۳۷۷  ۱۷۲۰",
+            owner: "علی سرلک",
+            date: "۰۴/۱۲",
+            bank: "rammit"
+        },
+        {
+            number: "۶۲۱۹  ۸۶۱۹  ۱۳۷۷  ۱۷۲۰",
+            owner: "علی سرلک",
+            date: "۰۴/۱۲",
+            bank: "blue"
+        },
+    ]
+
 
     return (
         <div className='main-home-div'>
@@ -84,14 +99,18 @@ export const Home = () => {
                             <img src={plus} alt="Plus" />کارت جدید
                         </span>
                     </div>
-                    <div className='bank-card'>
-                        <img src={whiteLogo} alt="Bank Logo" />
-                        <span className='number'>۶۲۱۹  ۸۶۱۹  ۱۳۷۷  ۱۷۲۰</span>
-                        <div className='name-date'>
-                            <span className='name'>علی سرلک</span>
-                            <span className='date'>۰۴/۱۲</span>
-                        </div>
-                    </div>
+                    {
+                        bankCards.map((item, index) => {
+                            return (
+                                <CardBank
+                                    key={index}
+                                    owner={item.owner}
+                                    number={item.number}
+                                    date={item.date}
+                                    bank={item.bank} />
+                            )
+                        })
+                    }
                 </div>
 
 

@@ -24,12 +24,14 @@
             line-height: 14px;
             color: black;
         }
-        img {
-            width: 32px;
-            height: 32px;
+        .link {
             position: absolute;
             right: 10px;
-            cursor: pointer;
+            img {
+                width: 32px;
+                height: 32px;
+                cursor: pointer;
+            }
         }
     }
 

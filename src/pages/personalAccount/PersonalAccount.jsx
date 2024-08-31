@@ -5,6 +5,7 @@ import { Profile } from './components/profile/Profile'
 import { About } from './components/about/About'
 import { Support } from './components/support/Support'
 import { Roles } from './components/roles/Roles'
+import { Link } from 'react-router-dom'
 
 export const PersonalAccount = () => {
 
@@ -20,7 +21,7 @@ export const PersonalAccount = () => {
         <div className='main-personal'>
             <div className='title-button'>
                 <span className='title'>حساب کاربری</span>
-                <img src={arrow} alt="Arrow" />
+                <Link className='link' to={'/dashboard/home'}><img src={arrow} alt="Arrow" /></Link>
             </div>
 
             <div className='tabs'>

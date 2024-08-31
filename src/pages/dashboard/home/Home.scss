@@ -126,6 +126,7 @@
             margin-top: 20px;
             column-gap: 10px;
             overflow-x: auto;
+            padding: 10px 0;
 
             .add-card-div {
                 min-width: 64px;
@@ -157,49 +158,25 @@
                 }
             }
 
-            .bank-card {
-                background: url("../../../assets/background.png");
-                min-width: 280px;
-                height: 184px;
-                border-radius: 12px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                position: relative;
-                align-items: flex-end;
-                padding: 20px;
-                background-repeat: no-repeat;
-                background-size: 100% 100%;
-                .number {
-                    font-size: 14px;
-                    line-height: 14px;
-                    color: #ffffff;
-                    font-weight: 400;
-                }
-                .name-date {
-                    display: flex;
-                    flex-direction: column;
-                    row-gap: 4px;
-                    .name {
-                        font-size: 14px;
-                        line-height: 14px;
-                        color: #ffffff;
-                        font-weight: 400;
-                    }
-                    .date {
-                        font-size: 14px;
-                        line-height: 14px;
-                        color: #ffffff;
-                        font-weight: 400;
-                    }
-                }
-                img {
-                    width: 50px;
-                    height: 60px;
-                    position: absolute;
-                    top: 20px;
-                    right: 20px;
-                }
+            &::-webkit-scrollbar {
+                @include responsive-size(display, flex, flex, none, none);
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: white;
+                border-radius: 20px;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: #d7efff;
+                border-radius: 20px;
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #d7efff;
             }
         }
 

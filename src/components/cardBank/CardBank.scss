@@ -1,0 +1,72 @@
+.bank-card {
+    min-width: 280px;
+    height: 184px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    align-items: flex-end;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    .number {
+        font-size: 14px;
+        line-height: 14px;
+        color: #ffffff;
+        font-weight: 400;
+    }
+    .name-date {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        align-items: flex-end;
+        .name {
+            font-size: 14px;
+            line-height: 14px;
+            color: #ffffff;
+            font-weight: 400;
+        }
+        .date {
+            font-size: 14px;
+            line-height: 14px;
+            color: #ffffff;
+            font-weight: 400;
+        }
+    }
+
+    .contain-kind {
+        display: flex;
+
+        .kind {
+            font-size: 11px;
+            line-height: 11px;
+            color: #ffffff;
+            font-weight: 600;
+            background-color: #f1f2f557;
+            padding: 12px;
+            cursor: pointer;
+        }
+
+        .card {
+            border-radius: 0 10px 10px 0;
+        }
+
+        .charge {
+            border-radius: 10px 0 0 10px;
+        }
+
+        .active-card {
+            border-radius: 10px;
+            background-color: #ffffff;
+            color: #1b2b46;
+            margin-left: -6px;
+        }
+        .active-charge {
+            border-radius: 10px;
+            background-color: #ffffff;
+            color: #1b2b46;
+            margin-right: -6px;
+        }
+    }
+}
