@@ -11,6 +11,7 @@ import { MyPayment } from './pages/dashboard/myPayment/MyPayment'
 import { TransactionDetail } from './pages/dashboard/transactionDetail/TransactionDetail'
 
 import "./styles/fontDocument.css";
+import { PaymentDetail } from './pages/dashboard/paymentDetail/PaymentDetail'
 
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
         </Route>
 
         <Route path="/dashboard/transactions/:id" element={<TransactionDetail />} />
+        <Route path="/dashboard/payment/:id" element={<PaymentDetail />} />
 
       </Routes>
     </BrowserRouter>
