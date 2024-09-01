@@ -217,5 +217,158 @@
                 }
             }
         }
+
+        .container-transactions {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            .title-link {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .title {
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: #929db1;
+                    font-weight: 700;
+                }
+                .link {
+                    font-size: 11px;
+                    line-height: 11px;
+                    color: #58a5ff;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+            }
+
+            .cards {
+                max-width: 340px;
+                width: 100%;
+                display: flex;
+                column-gap: 10px;
+                overflow-x: auto;
+                margin-bottom: 90px;
+                margin-top: 10px;
+                padding-bottom: 10px;
+
+                .main-vertical-card {
+                    min-width: 196px;
+                    height: 160px;
+                    border-radius: 12px;
+                    background-color: #ffffff;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-around;
+                    text-decoration: none;
+                    padding: 0 10px;
+                    .logo-name-status {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        column-gap: 10px;
+                        img {
+                            width: 48px;
+                            height: 48px;
+                        }
+                        .name-status {
+                            display: flex;
+                            flex-direction: column;
+                            row-gap: 4px;
+
+                            .name {
+                                color: #071225;
+                                font-weight: 600;
+                                font-size: 12px;
+                                line-height: 12px;
+                            }
+                            .kind {
+                                display: flex;
+                                align-items: center;
+                                font-weight: 600;
+                                font-size: 9px;
+                                line-height: 9px;
+                                padding: 4px 2px;
+                                border-radius: 30px;
+                                justify-content: space-between;
+                                column-gap: 4px;
+                                img {
+                                    width: 16px;
+                                    height: 16px;
+                                }
+                            }
+                            .payment {
+                                color: #0957de;
+                                background-color: #f0f9ff;
+                                img {
+                                    filter: invert(23%) sepia(74%) saturate(7116%) hue-rotate(216deg) brightness(95%)
+                                        contrast(93%);
+                                }
+                            }
+                            .charge {
+                                color: #18b562;
+                                background-color: #eaffef;
+                                img {
+                                    filter: invert(55%) sepia(50%) saturate(705%) hue-rotate(96deg) brightness(92%)
+                                        contrast(90%);
+                                }
+                            }
+                            .fail {
+                                color: #e6446d;
+                                background-color: #fff1f7;
+                                img {
+                                    filter: invert(37%) sepia(81%) saturate(2170%) hue-rotate(321deg) brightness(94%)
+                                        contrast(90%);
+                                }
+                            }
+                        }
+                    }
+
+                    .amount-for {
+                        color: #071225;
+                        font-weight: 400;
+                        font-size: 10px;
+                        line-height: 10px;
+                    }
+
+                    .amount {
+                        color: #071225;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 15px;
+                    }
+
+                    .date {
+                        color: #929db1;
+                        font-weight: 600;
+                        font-size: 10px;
+                        line-height: 10px;
+                    }
+                }
+
+                &::-webkit-scrollbar {
+                    @include responsive-size(display, flex, flex, none, none);
+                }
+
+                /* Track */
+                &::-webkit-scrollbar-track {
+                    background: white;
+                    border-radius: 20px;
+                }
+
+                /* Handle */
+                &::-webkit-scrollbar-thumb {
+                    background: #d7efff;
+                    border-radius: 20px;
+                }
+
+                /* Handle on hover */
+                &::-webkit-scrollbar-thumb:hover {
+                    background: #d7efff;
+                }
+            }
+        }
     }
 }
