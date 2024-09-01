@@ -12,6 +12,7 @@ import { TransactionDetail } from './pages/dashboard/transactionDetail/Transacti
 
 import "./styles/fontDocument.css";
 import { PaymentDetail } from './pages/dashboard/paymentDetail/PaymentDetail'
+import { AddInventory } from './pages/dashboard/addInventory/AddInventory'
 
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
 
         <Route path="/dashboard/transactions/:id" element={<TransactionDetail />} />
         <Route path="/dashboard/payment/:id" element={<PaymentDetail />} />
+        <Route path="/dashboard/addinventory" element={<AddInventory />} />
 
       </Routes>
     </BrowserRouter>

@@ -63,20 +63,6 @@ export const PaymentDetail = () => {
                     <div className='box-white'>
                         <img className={transaction.isSuccessful ? `check` : `close`} src={transaction.isSuccessful ? check : close} alt="Status" />
                     </div>
-                    {/* <span className={
-                        [
-                            transaction.isSuccessful ? "payment" : "fail",
-                            "kind"
-                        ].join(" ")
-                    }>
-                        {
-                            transaction.kind == "payment" ? `پرداخت ` : `شارژ `
-                        }
-                        {
-                            transaction.isSuccessful ? `موفق` : `ناموفق`
-                        }
-                        <img src={transaction.isSuccessful ? check : close} alt="Kind Payment" />
-                    </span> */}
                 </div>
 
                 <span className={

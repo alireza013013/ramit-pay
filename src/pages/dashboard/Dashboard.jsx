@@ -21,7 +21,7 @@ export const Dashboard = () => {
                     <img src={transaction} alt="Transaction" />
                     <span className='title'>تراکنش‌ها</span>
                 </NavLink>
-                <NavLink to="/" className='add-button-link'>
+                <NavLink to="/dashboard/addinventory" className='add-button-link'>
                     <img src={plus} alt="Transaction" />
                 </NavLink>
                 <NavLink to="/dashboard/payment" className='link-nav'>

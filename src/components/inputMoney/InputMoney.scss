@@ -1,0 +1,56 @@
+.main-input-money {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 10px;
+    position: relative;
+
+    .title-input {
+        color: #071225;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 6px;
+    }
+    .icon-toman {
+        width: 56px;
+        height: 42px;
+        border-radius: 12px 0 0 12px;
+        background-color: #f0f9ff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 2px;
+        top: 31px;
+        img {
+            width: 80%;
+        }
+    }
+    .inputs {
+        width: 224px;
+        height: 48px;
+        background-color: white;
+        border-radius: 12px;
+        border: none;
+        padding: 0 16px 0 64px;
+        color: black;
+        font-family: "YekanBakh";
+        direction: ltr;
+        font-size: 18px;
+    }
+    .inputs:focus {
+        outline: none;
+        border: none;
+    }
+    .inputs::placeholder {
+        color: #929db1;
+        font-family: "YekanBakh";
+    }
+    .inputs::-webkit-outer-spin-button,
+    .inputs::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
