@@ -19,6 +19,7 @@ import { RegisterDeposit } from './pages/dashboard/registerDeposit/RegisterDepos
 import { RegisterBooking } from './pages/dashboard/registerBooking/RegisterBooking'
 import { ResultBooking } from './pages/dashboard/resultbooking/Resultbooking'
 import { SubmitDeposit } from './pages/dashboard/submitDeposit/SubmitDeposit'
+import { Update } from './pages/dashboard/updates/Update'
 
 
 const App = () => {
@@ -49,6 +50,7 @@ const App = () => {
         <Route path="/dashboard/registerbooking" element={<RegisterBooking />} />
         <Route path="/dashboard/resultbooking/:status" element={<ResultBooking />} />
         <Route path="/dashboard/submitdeposit" element={<SubmitDeposit />} />
+        <Route path="/dashboard/update" element={<Update />} />
 
 
       </Routes>
