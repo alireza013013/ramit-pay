@@ -14,6 +14,7 @@ import "./styles/fontDocument.css";
 import { PaymentDetail } from './pages/dashboard/paymentDetail/PaymentDetail'
 import { AddInventory } from './pages/dashboard/addInventory/AddInventory'
 import { ResultPay } from './pages/dashboard/resultPay/ResultPay'
+import { InPersonTransaction } from './pages/dashboard/inPersonTransactions/InPersonTransaction'
 
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="transactions" element={<Transactions />} />
           <Route path="payment" element={<MyPayment />} />
           <Route path="profile" element={<Profile />} />
+          <Route path="inpersontransactions" element={<InPersonTransaction />} />
         </Route>
 
         <Route path="/dashboard/transactions/:id" element={<TransactionDetail />} />
