@@ -18,6 +18,7 @@ import { InPersonTransaction } from './pages/dashboard/inPersonTransactions/InPe
 import { RegisterDeposit } from './pages/dashboard/registerDeposit/RegisterDeposit'
 import { RegisterBooking } from './pages/dashboard/registerBooking/RegisterBooking'
 import { ResultBooking } from './pages/dashboard/resultbooking/Resultbooking'
+import { SubmitDeposit } from './pages/dashboard/submitDeposit/SubmitDeposit'
 
 
 const App = () => {
@@ -47,6 +48,7 @@ const App = () => {
         <Route path="/dashboard/registerdeposit" element={<RegisterDeposit />} />
         <Route path="/dashboard/registerbooking" element={<RegisterBooking />} />
         <Route path="/dashboard/resultbooking/:status" element={<ResultBooking />} />
+        <Route path="/dashboard/submitdeposit" element={<SubmitDeposit />} />
 
 
       </Routes>

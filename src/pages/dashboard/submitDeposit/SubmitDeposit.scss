@@ -1,0 +1,164 @@
+@import "../../../styles/references/index";
+
+.main-submit-deposit {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #d7efff;
+
+    .container {
+        max-width: 340px;
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+        .card-bank {
+            width: 100%;
+            max-width: 340px;
+            height: 216px;
+            background-size: 100% 100%;
+            position: relative;
+
+            .id-copy {
+                display: flex;
+                column-gap: 10px;
+                position: absolute;
+                left: 20px;
+                top: 20px;
+                .id-title {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 10px;
+                    align-items: flex-end;
+                    span {
+                        color: white;
+                        font-size: 12px;
+                        line-height: 14px;
+                        font-weight: 600;
+                    }
+                }
+                .copy {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 8px;
+                    background-color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: 50%;
+                        height: 50%;
+                    }
+                }
+            }
+
+            .image-name {
+                display: flex;
+                column-gap: 10px;
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+                .name-job {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 10px;
+                    .name {
+                        font-weight: 700;
+                        font-size: 22px;
+                        line-height: 22px;
+                        color: #ffffff;
+                    }
+                    .job {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+
+        .container-input {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            .inputs {
+                width: 242px;
+            }
+        }
+
+        .continue {
+            background-color: #0957de;
+            width: calc(100% - 20px);
+            max-width: 320px;
+            height: 48px;
+            border-radius: 8px;
+            border: none;
+            color: white;
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all;
+            margin-top: 10px;
+            font-family: "YekanBakh";
+
+            &:active {
+                transform: scale(0.95);
+            }
+        }
+
+        .roles-div {
+            width: 90%;
+            max-width: 280px;
+            border-radius: 16px;
+            background-color: #f0f9ff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 10px;
+            margin-top: 40px;
+
+            .subtitle {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 14px;
+                color: #181f2e;
+            }
+
+            .description {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 20px;
+                color: #181f2e;
+                display: flex;
+                align-items: flex-start;
+                .dot {
+                    min-width: 6px;
+                    min-height: 6px;
+                    border-radius: 50%;
+                    background-color: #181f2e;
+                    margin-left: 10px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
