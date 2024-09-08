@@ -1,4 +1,4 @@
-import './ResultBooking.scss'
+import './Resultbooking.scss'
 import closeCircle from "../../../assets/icons/close-circle.svg"
 import close from "../../../assets/icons/close.svg"
 import check from "../../../assets/icons/check.svg"
